@@ -1,0 +1,79 @@
+﻿body {
+    font-family: "Ubuntu", "Trebuchet MS", sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1em auto;
+}
+
+th, td {
+    padding: 5px 10px;
+    border: 1px solid #999;
+    font-size: 12px;
+}
+
+th {
+    background-color: #eee;
+}
+
+    th[data-sort] {
+        cursor: pointer;
+    }
+
+/* just some random additional styles for a more real-world situation */
+#msg {
+    color: #0a0;
+    text-align: center;
+}
+
+#description{
+    text-align: center;
+}
+
+#watermark{
+    text-align: left;
+    font-size: small;
+    color: lightgray;
+}
+
+div.form {
+    display: block;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+td.name {
+    font-weight: bold;
+}
+
+td.positve {
+    color: green;
+}
+
+td.negative {
+    color: #d31a1a;
+}
+
+/* zebra-striping seems to really slow down Opera sometimes */
+tr:nth-child(even) > td {
+    background-color: #f9f9f7;
+}
+
+tr:nth-child(odd) > td {
+    background-color: #ffffff;
+}
+
+.disabled {
+    opacity: 0.5;
+}

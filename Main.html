@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>CMT Cryptopia Arbitrage Tool</title>
+    <link href="TopiaStyleSheet.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="stupidtable.min.js"></script>
+    <script src="logic.js"></script>
+</head>
+<body>
+    <p id="watermark">2018 - @iLLy_Mays All Rights Reserved</p>
+    <h1>CMT Cryptopia Arbitrage Tool</h1>
+    <p id="description">This tool allows you to identify good BTC/LTC arbitrage pairs (others coming soon)</p>
+    <div>
+        <form>
+            <input type="button" value="Refresh" onclick="runArbitrage();" />
+        </form>
+    </div>
+    <p id="msg">&nbsp;</p>
+    <table id="values">
+        <thead>
+            <tr>
+                <th data-sort="string">Symbol</th>
+                <th data-sort="string">Name</th>
+                <th>Cryptopia BTC Listing</th>
+                <th>Cryptopia LTC Listing</th>
+                <th data-sort="float" data-sort-default="desc">LTC Bid - BTC Ask (BTC)</th>
+                <th data-sort="float">LTC Bid - BTC Ask (USD)</th>
+                <th data-sort="float">BTC Ask (BTC)</th>
+                <th data-sort="float">LTC Bid (BTC)</th>
+                <th data-sort="float">BTC Ask (USD)</th>
+                <th data-sort="float">LTC Bid (USD)</th>
+                <th data-sort="float">LTC Bid (LTC)</th>
+                <th data-sort="flat">BTC Sell Volume (24 h)</th>
+                <th data-sort="float">LTC Buy Volume (24 h)</th>
+                <th data-sort="float">BTC Trade Fee)</th>
+                <th data-sort="float">LTC Trade Fee</th>
+                <th data-sort="string">BTC Status</th>
+                <th data-sort="string">LTC Status</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>
